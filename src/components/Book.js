@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Book = ({ book }) => (
   <>
@@ -11,5 +12,16 @@ const Book = ({ book }) => (
     </div>
   </>
 );
+
+Book.defaultProps = {
+  book: {},
+};
+
+Book.propTypes = {
+  book: {
+    title: PropTypes.string,
+    author: PropTypes.string,
+  },
+};
 
 export default Book;

@@ -2,7 +2,7 @@ import React from 'react';
 
 const InputForm = () => (
   <div>
-  <h2>Add New Book</h2>
+    <h2>Add New Book</h2>
     <form>
       <input
         type="text"

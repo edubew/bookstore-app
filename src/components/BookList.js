@@ -23,9 +23,7 @@ const BookList = () => {
   return (
     <div>
       <ul>
-        {books.map((book) =>
-        // console.log('List of books', book.author);
-          <Book key={book.id} id={book.id} book={book} />)}
+        {books.map((book) => <Book key={book.id} id={book.id} book={book} />)}
       </ul>
       <InputForm />
     </div>
