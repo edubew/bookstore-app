@@ -4,7 +4,6 @@ import {
 } from 'react-router-dom';
 import Categories from './components/Categories';
 import BookList from './components/BookList';
-// import InputForm from './components/InputForm';
 
 const App = () => (
   <Router>
@@ -17,7 +16,6 @@ const App = () => (
       <Route path="/" element={<BookList />} />
       <Route path="/categories" element={<Categories />} />
     </Routes>
-    {/* <InputForm /> */}
   </Router>
 );
 

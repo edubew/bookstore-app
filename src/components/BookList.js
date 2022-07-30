@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Book from './Book';
+import InputForm from './InputForm';
 
 const BookList = () => {
   const [books, setBooks] = useState([
@@ -20,12 +21,14 @@ const BookList = () => {
     },
   ]);
   return (
-    <ul>
-      {books.map((book) => {
-        //console.log('List of books', book.author);
-         return <Book key={book.id} id={book.id} book={book} />;
-      })}
-    </ul>
+    <div>
+      <ul>
+        {books.map((book) =>
+        // console.log('List of books', book.author);
+          <Book key={book.id} id={book.id} book={book} />)}
+      </ul>
+      <InputForm />
+    </div>
   );
 };
 

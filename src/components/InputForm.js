@@ -1,27 +1,20 @@
-// import React, { Component } from 'react';
+import React from 'react';
 
-// export class InputForm extends Component {
-//   state = {
-//     title: '',
-//   }
+const InputForm = () => (
+  <div>
+  <h2>Add New Book</h2>
+    <form>
+      <input
+        type="text"
+        placeholder="Add Book..."
+      />
+      <input
+        type="text"
+        placeholder="Author..."
+      />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+);
 
-//   render() {
-//     return (
-//       <>
-//         <form>
-//           <input
-//             type="text"
-//             placeholder="Add Book..."
-//             value={this.state.title}
-//           />
-//           <input
-//             type="text"
-//             placeholder="Category"
-//           />
-//         </form>
-//       </>
-//     );
-//   }
-// }
-
-// export default InputForm;
+export default InputForm;
