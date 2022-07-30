@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 400px;
+  margin: 2% 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 22px;
+  color: rgb(6, 64, 223);
+}
+
+ul {
+  list-style: none;
+  margin: 4%;
+}
+
+.list-container {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 2px;
+  margin-bottom: 24px;
+}
+
+.input-container {
+  margin: 4%;
+}
+
+.input-container h2 {
+  margin-bottom: 10px;
+}
+
+input {
+  margin: 8px;
+  padding: 6px;
+}
+
+button {
+  padding: 6px;
+}
