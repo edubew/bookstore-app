@@ -1,7 +1,7 @@
 import React from 'react';
 
 const InputForm = () => (
-  <div>
+  <div className="input-container">
     <h2>Add New Book</h2>
     <form>
       <input

@@ -3,6 +3,7 @@ import Book from './Book';
 import InputForm from './InputForm';
 
 const BookList = () => {
+  // eslint-disable-next-line
   const [books, setBooks] = useState([
     {
       id: 1,
@@ -23,7 +24,9 @@ const BookList = () => {
   return (
     <div>
       <ul>
-        {books.map((book) => <Book key={book.id} id={book.id} book={book} />)}
+        {books.map((book) => (
+          <Book key={book.id} id={book.id} book={book} />
+        ))}
       </ul>
       <InputForm />
     </div>

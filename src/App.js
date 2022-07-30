@@ -8,7 +8,7 @@ import BookList from './components/BookList';
 const App = () => (
   <Router>
     <nav>
-      <Link to="/">Bookstore CMS</Link>
+      <Link className="logo" to="/">Bookstore CMS</Link>
       <Link to="/">Books</Link>
       <Link to="/categories">Categories</Link>
     </nav>
