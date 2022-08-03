@@ -5,6 +5,12 @@ export const bookSlice = createSlice({
   initialState: {
     books: [],
   },
+  reducers: {
+    addBook: (state, action) => {
+      state.title = action.payload.title;
+      state.author = action.payload.author;
+    },
+  },
 });
 
 export const { addBook } = bookSlice.actions;
