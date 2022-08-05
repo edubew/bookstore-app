@@ -2,8 +2,8 @@ import React from 'react';
 
 const Categories = () => (
   <div>
-    <h2>Categories Page.</h2>
-    <button type="submit">Check Status</button>
+    <h3>This is the categories page</h3>
+    <button type="button">Check status</button>
   </div>
 );
 
