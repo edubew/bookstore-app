@@ -1,17 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import Book from '../Book/Book';
 import AddBook from '../AddBook.js/AddBook';
 
 const Books = () => {
-  // eslint-disable-next-line
-  const [books, setBooks] = useState([{ title: 'Hunger Games', author: 'Suzzanne Collins' }, { title: 'Lord of the Rings', author: 'R.R Martin' }]);
+  const booksData = useSelector((state) => state.books);
   return (
     <div>
-      {books.map((book) => (
+      {booksData.books.map((book) => (
         <Book
-          key={book.title}
+          key={book.id}
           title={book.title}
           author={book.author}
+          id={book.id}
         />
       ))}
       <AddBook />
