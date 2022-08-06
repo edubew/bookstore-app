@@ -27,7 +27,7 @@ const AddBook = () => {
           name="title"
           value={state.title}
           type="text"
-          placeholder="Addbook tile"
+          placeholder="Add a book..."
           onChange={handleChange}
         />
         <input
